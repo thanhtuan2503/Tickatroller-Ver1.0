@@ -1,0 +1,1811 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Leonardo 324U"
+Date "2018-08-10"
+Rev "0.0"
+Comp "www.MakersBox.us"
+Comment1 "648.ken@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5274 4910 4830 4910
+Wire Wire Line
+	5274 4898 5274 4910
+Wire Wire Line
+	4830 4910 4830 4902
+Wire Wire Line
+	5274 4460 5274 4598
+Wire Wire Line
+	3104 4912 3104 4910
+Wire Wire Line
+	3004 4912 3104 4912
+$Comp
+L project-rescue:C-project C2
+U 1 1 5B8EA9FF
+P 5274 4748
+F 0 "C2" H 5299 4848 50  0000 L CNN
+F 1 "0.1uF" H 5299 4648 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5312 4598 50  0001 C CNN
+F 3 "" H 5274 4748 50  0001 C CNN
+	1    5274 4748
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0104
+U 1 1 5F669C13
+P 9624 5988
+F 0 "#PWR0104" H 9624 5738 50  0001 C CNN
+F 1 "GND" H 9624 5838 50  0000 C CNN
+F 2 "" H 9624 5988 50  0001 C CNN
+F 3 "" H 9624 5988 50  0001 C CNN
+	1    9624 5988
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0103
+U 1 1 5F668281
+P 9474 5988
+F 0 "#PWR0103" H 9474 5838 50  0001 C CNN
+F 1 "+5V" H 9474 6128 50  0000 C CNN
+F 2 "" H 9474 5988 50  0001 C CNN
+F 3 "" H 9474 5988 50  0001 C CNN
+	1    9474 5988
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:LM2596S-project U3
+U 1 1 5F542D68
+P 2566 6046
+F 0 "U3" H 2566 6393 60  0000 C CNN
+F 1 "LM2596S" H 2566 6287 60  0000 C CNN
+F 2 "footprints:LM2596S-5V" H 2566 6046 60  0001 C CNN
+F 3 "" H 2566 6046 60  0001 C CNN
+	1    2566 6046
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 1000uF1
+U 1 1 5F543FF5
+P 1612 6132
+F 0 "1000uF1" H 1624 6262 50  0000 L CNN
+F 1 "CP3" H 1674 6124 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 1612 6132 50  0001 C CNN
+F 3 "~" H 1612 6132 50  0001 C CNN
+	1    1612 6132
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener 1N5824
+U 1 1 5F5526AD
+P 3224 6374
+F 0 "1N5824" V 3178 6453 50  0000 L CNN
+F 1 "D_Schottky" V 3269 6453 50  0000 L CNN
+F 2 "footprints:SS34_SMC" H 3224 6374 50  0001 C CNN
+F 3 "~" H 3224 6374 50  0001 C CNN
+	1    3224 6374
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:INDUCTOR 33uH1
+U 1 1 5F54FFD2
+P 3900 5948
+F 0 "33uH1" H 3900 6163 50  0000 C CNN
+F 1 "INDUCTOR" H 3900 6072 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 3900 5948 50  0001 C CNN
+F 3 "~" H 3900 5948 50  0001 C CNN
+	1    3900 5948
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 220uF2
+U 1 1 5F54EC7D
+P 4578 6302
+F 0 "220uF2" H 4693 6348 50  0000 L CNN
+F 1 "CP4" H 4693 6257 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 4578 6302 50  0001 C CNN
+F 3 "~" H 4578 6302 50  0001 C CNN
+	1    4578 6302
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	790  5944 1612 5944
+Wire Wire Line
+	2166 5944 2166 5946
+Wire Wire Line
+	1612 5982 1612 5944
+Connection ~ 1612 5944
+Wire Wire Line
+	1612 5944 2166 5944
+Wire Wire Line
+	1612 6282 1612 6662
+Wire Wire Line
+	1612 6662 784  6662
+Wire Wire Line
+	2166 6046 1832 6046
+Wire Wire Line
+	1832 6046 1832 6196
+Wire Wire Line
+	1832 6662 1612 6662
+Connection ~ 1612 6662
+Wire Wire Line
+	2166 6196 1832 6196
+Connection ~ 1832 6196
+Wire Wire Line
+	1832 6196 1832 6662
+Wire Wire Line
+	2966 5946 3224 5946
+Wire Wire Line
+	3224 5946 3224 6224
+Wire Wire Line
+	1832 6662 3224 6662
+Wire Wire Line
+	3224 6662 3224 6524
+Connection ~ 1832 6662
+Wire Wire Line
+	3224 5946 3650 5946
+Wire Wire Line
+	3650 5946 3650 5948
+Connection ~ 3224 5946
+Wire Wire Line
+	4150 5948 4578 5948
+Wire Wire Line
+	4578 5948 4578 6152
+Wire Wire Line
+	4578 6452 4578 6662
+Wire Wire Line
+	4578 6662 3224 6662
+Connection ~ 3224 6662
+Text Label 4872 5944 0    60   ~ 0
+SER_VCC
+Wire Wire Line
+	4872 5944 4578 5944
+Wire Wire Line
+	4578 5944 4578 5948
+Connection ~ 4578 5948
+Wire Wire Line
+	2966 6096 3048 6096
+Wire Wire Line
+	3048 6096 3048 5578
+Wire Wire Line
+	3048 5578 4578 5578
+Wire Wire Line
+	4578 5578 4578 5948
+Wire Wire Line
+	4576 5948 4578 5948
+$Comp
+L project-rescue:+5V-project #PWR0101
+U 1 1 5F6EA6DA
+P 4446 2578
+F 0 "#PWR0101" H 4446 2428 50  0001 C CNN
+F 1 "+5V" H 4446 2718 50  0000 C CNN
+F 2 "" H 4446 2578 50  0001 C CNN
+F 3 "" H 4446 2578 50  0001 C CNN
+	1    4446 2578
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3274 4910 3104 4910
+Wire Wire Line
+	3274 4910 3638 4910
+Wire Wire Line
+	2922 4662 3004 4662
+Wire Wire Line
+	3004 4662 3004 4912
+$Comp
+L project-rescue:GND-project #PWR015
+U 1 1 5B8EAEF2
+P 4264 4984
+F 0 "#PWR015" H 4264 4734 50  0001 C CNN
+F 1 "GND" H 4264 4834 50  0000 C CNN
+F 2 "" H 4264 4984 50  0001 C CNN
+F 3 "" H 4264 4984 50  0001 C CNN
+	1    4264 4984
+	1    0    0    -1  
+$EndComp
+Text Label 3004 4462 0    60   ~ 0
+VIN
+$Comp
+L Device:CP1 220uF1
+U 1 1 5F5A1BC2
+P 3274 4648
+F 0 "220uF1" H 3292 4756 50  0000 L CNN
+F 1 "CP1" H 3304 4542 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 3274 4648 50  0001 C CNN
+F 3 "~" H 3274 4648 50  0001 C CNN
+	1    3274 4648
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:C-project C1
+U 1 1 5B8EA90E
+P 3638 4628
+F 0 "C1" H 3663 4728 50  0000 L CNN
+F 1 "0.1uF" H 3663 4528 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3676 4478 50  0001 C CNN
+F 3 "" H 3638 4628 50  0001 C CNN
+	1    3638 4628
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 220uF3
+U 1 1 5F5A2E2D
+P 4830 4752
+F 0 "220uF3" H 4848 4922 50  0000 L CNN
+F 1 "CP2" H 4854 4640 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x7.7" H 4830 4752 50  0001 C CNN
+F 3 "~" H 4830 4752 50  0001 C CNN
+	1    4830 4752
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3274 4462 3274 4498
+Wire Wire Line
+	3274 4798 3274 4910
+Wire Wire Line
+	3274 4462 3638 4462
+Wire Wire Line
+	3638 4462 3638 4478
+Connection ~ 3274 4462
+Wire Wire Line
+	3862 4460 3638 4460
+Wire Wire Line
+	3638 4460 3638 4462
+Connection ~ 3638 4462
+Wire Wire Line
+	3638 4910 3638 4778
+Connection ~ 3274 4910
+$Comp
+L project-rescue:AMS1117-project U2
+U 1 1 5F598A7B
+P 4262 4460
+F 0 "U2" H 4262 4747 60  0000 C CNN
+F 1 "AMS1117" H 4262 4641 60  0000 C CNN
+F 2 "footprints:AMS1117" H 4262 4460 60  0001 C CNN
+F 3 "" H 4262 4460 60  0001 C CNN
+	1    4262 4460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4262 4710 4262 4910
+Connection ~ 3638 4910
+Wire Wire Line
+	4662 4460 4830 4460
+Wire Wire Line
+	4830 4460 4830 4602
+Wire Wire Line
+	4830 4460 5274 4460
+Connection ~ 4830 4460
+Connection ~ 4830 4910
+Wire Wire Line
+	2904 4462 3274 4462
+Wire Wire Line
+	2594 4458 2904 4458
+Wire Wire Line
+	2904 4174 2904 4458
+Connection ~ 2904 4458
+Wire Wire Line
+	2904 4458 2904 4462
+Wire Wire Line
+	2922 4654 2922 4662
+Text Label 9974 5988 3    60   ~ 0
+CHB
+Text Label 9774 5988 3    60   ~ 0
+CHA
+$Comp
+L project-rescue:ECD_BLOCK-project U5
+U 1 1 5F526A9A
+P 9774 5738
+F 0 "U5" H 9660 6060 60  0000 L CNN
+F 1 "ECD_BLOCK" H 9500 6202 60  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 9774 5738 60  0001 C CNN
+F 3 "" H 9774 5738 60  0001 C CNN
+	1    9774 5738
+	1    0    0    -1  
+$EndComp
+Text Notes 1338 5320 0    118  ~ 0
+SOURCE BLOCK\n
+Text Notes 8364 6402 0    118  ~ 0
+OUTPUT  BLOCK\n
+Text Label 2904 4174 1    60   ~ 0
+2596_VCC
+Text Label 790  5944 0    60   ~ 0
+2596_VCC
+$Comp
+L project-rescue:GND-project #PWR0105
+U 1 1 5F50E56A
+P 784 6662
+F 0 "#PWR0105" H 784 6412 50  0001 C CNN
+F 1 "GND" H 784 6512 50  0000 C CNN
+F 2 "" H 784 6662 50  0001 C CNN
+F 3 "" H 784 6662 50  0001 C CNN
+	1    784  6662
+	1    0    0    -1  
+$EndComp
+Text Label 3280 1522 3    60   ~ 0
+SER_VCC
+$Comp
+L project-rescue:ESC_BLOCK-project U6
+U 1 1 5F54E804
+P 6446 5638
+F 0 "U6" H 6422 5920 59  0000 L CNN
+F 1 "ESC_BLOCK" H 6270 6030 59  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 6496 5638 118 0001 C CNN
+F 3 "" H 6496 5638 118 0001 C CNN
+	1    6446 5638
+	1    0    0    -1  
+$EndComp
+Text Label 5196 2578 3    60   ~ 0
+SCK
+Text Label 4896 2578 3    60   ~ 0
+MISO
+Text Label 4746 2578 3    60   ~ 0
+MOSI
+Text Label 5046 2578 3    60   ~ 0
+~RESET
+Text Label 6696 5938 3    60   ~ 0
+ESC_PPM
+$Comp
+L project-rescue:GND-project #PWR0106
+U 1 1 5F514122
+P 7848 5998
+F 0 "#PWR0106" H 7848 5748 50  0001 C CNN
+F 1 "GND" H 7848 5848 50  0000 C CNN
+F 2 "" H 7848 5998 50  0001 C CNN
+F 3 "" H 7848 5998 50  0001 C CNN
+	1    7848 5998
+	1    0    0    -1  
+$EndComp
+Text Label 7998 5998 3    60   ~ 0
+SER_VCC
+Text Label 8148 5998 3    60   ~ 0
+SERVO_PPM
+Wire Notes Line
+	5362 730  5362 3486
+Wire Notes Line
+	5362 3486 676  3486
+Wire Notes Line
+	676  3486 676  730 
+Text Label 1796 1724 2    50   ~ 0
+PE6
+$Comp
+L project-rescue:GND-project #PWR0107
+U 1 1 5F5432EE
+P 2096 2024
+F 0 "#PWR0107" H 2096 1774 50  0001 C CNN
+F 1 "GND" H 2096 1874 50  0000 C CNN
+F 2 "" H 2096 2024 50  0001 C CNN
+F 3 "" H 2096 2024 50  0001 C CNN
+	1    2096 2024
+	1    0    0    -1  
+$EndComp
+Text Label 3880 1522 3    60   ~ 0
+A4
+Text Label 3730 1522 3    60   ~ 0
+A3
+Text Label 3580 1522 3    60   ~ 0
+A2
+Text Label 4480 1522 3    60   ~ 0
+A8
+Text Label 4180 1522 3    60   Italic 0
+A6
+Text Label 4030 1522 3    60   ~ 0
+A5
+Text Label 3430 1522 3    60   ~ 0
+A1
+Wire Notes Line
+	5702 7082 596  7082
+Wire Notes Line
+	596  7082 596  3666
+Text Label 4330 1522 3    60   ~ 0
+A7
+Text Notes 2310 3700 0    157  ~ 0
+DEBUG AND INPUT BLOCK\n\n
+$Comp
+L project-rescue:+5V-project #PWR0108
+U 1 1 5F5B6027
+P 6496 5938
+F 0 "#PWR0108" H 6496 5788 50  0001 C CNN
+F 1 "+5V" H 6496 6078 50  0000 C CNN
+F 2 "" H 6496 5938 50  0001 C CNN
+F 3 "" H 6496 5938 50  0001 C CNN
+	1    6496 5938
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0109
+U 1 1 5F5B64F8
+P 6296 5938
+F 0 "#PWR0109" H 6296 5688 50  0001 C CNN
+F 1 "GND" H 6296 5788 50  0000 C CNN
+F 2 "" H 6296 5938 50  0001 C CNN
+F 3 "" H 6296 5938 50  0001 C CNN
+	1    6296 5938
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:CODE_INPUT-project U8
+U 1 1 5F6E9FF9
+P 4846 2328
+F 0 "U8" H 5152 2428 60  0000 L CNN
+F 1 "CODE_INPUT" H 4596 2530 60  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 4846 2328 60  0001 C CNN
+F 3 "" H 4846 2328 60  0001 C CNN
+	1    4846 2328
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:SERVO_BLOCK-project U7
+U 1 1 5F54D7E7
+P 7998 5648
+F 0 "U7" H 7966 5934 60  0000 L CNN
+F 1 "SERVO_BLOCK" H 7786 6078 60  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 7948 5598 60  0001 C CNN
+F 3 "" H 7948 5598 60  0001 C CNN
+	1    7998 5648
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:R-project R11
+U 1 1 5F7D6FAF
+P 10408 2390
+F 0 "R11" V 10324 2382 50  0000 C CNN
+F 1 "10k" V 10400 2396 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10338 2390 50  0001 C CNN
+F 3 "" H 10408 2390 50  0001 C CNN
+	1    10408 2390
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0110
+U 1 1 5F7D8506
+P 10408 2240
+F 0 "#PWR0110" H 10408 2090 50  0001 C CNN
+F 1 "+5V" H 10408 2380 50  0000 C CNN
+F 2 "" H 10408 2240 50  0001 C CNN
+F 3 "" H 10408 2240 50  0001 C CNN
+	1    10408 2240
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F52052D
+P 1448 1370
+F 0 "D2" V 1487 1253 50  0000 R CNN
+F 1 "LED" V 1396 1253 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1448 1370 50  0001 C CNN
+F 3 "~" H 1448 1370 50  0001 C CNN
+	1    1448 1370
+	0    -1   -1   0   
+$EndComp
+Text Label 848  1720 2    50   ~ 0
+PB0
+$Comp
+L project-rescue:R-project R2
+U 1 1 5F5415C6
+P 1448 1070
+F 0 "R2" V 1528 1070 50  0000 C CNN
+F 1 "470" V 1448 1080 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1378 1070 50  0001 C CNN
+F 3 "" H 1448 1070 50  0001 C CNN
+	1    1448 1070
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0111
+U 1 1 5F542640
+P 1448 2024
+F 0 "#PWR0111" H 1448 1774 50  0001 C CNN
+F 1 "GND" H 1448 1874 50  0000 C CNN
+F 2 "" H 1448 2024 50  0001 C CNN
+F 3 "" H 1448 2024 50  0001 C CNN
+	1    1448 2024
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0112
+U 1 1 5F89D5F2
+P 1448 920
+F 0 "#PWR0112" H 1448 770 50  0001 C CNN
+F 1 "+5V" H 1448 1060 50  0000 C CNN
+F 2 "" H 1448 920 50  0001 C CNN
+F 3 "" H 1448 920 50  0001 C CNN
+	1    1448 920 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:R-project R12
+U 1 1 5F8C185C
+P 998 1720
+F 0 "R12" V 1078 1720 50  0000 C CNN
+F 1 "10" V 1004 1730 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 928 1720 50  0001 C CNN
+F 3 "" H 998 1720 50  0001 C CNN
+	1    998  1720
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:R-project R13
+U 1 1 5F8C1BE4
+P 1148 1870
+F 0 "R13" V 1228 1870 50  0000 C CNN
+F 1 "10K" V 1148 1880 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1078 1870 50  0001 C CNN
+F 3 "" H 1148 1870 50  0001 C CNN
+	1    1148 1870
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0113
+U 1 1 5F8C23D3
+P 1148 2020
+F 0 "#PWR0113" H 1148 1770 50  0001 C CNN
+F 1 "GND" H 1148 1870 50  0000 C CNN
+F 2 "" H 1148 2020 50  0001 C CNN
+F 3 "" H 1148 2020 50  0001 C CNN
+	1    1148 2020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1448 2024 1448 1920
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 5F89B615
+P 1348 1720
+F 0 "Q1" H 1486 1584 50  0000 L CNN
+F 1 "2N7002" H 1310 1498 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1548 1645 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 1348 1720 50  0001 L CNN
+	1    1348 1720
+	1    0    0    -1  
+$EndComp
+Connection ~ 1148 1720
+$Comp
+L project-rescue:GND-project #PWR0114
+U 1 1 5F9011F8
+P 2396 2024
+F 0 "#PWR0114" H 2396 1774 50  0001 C CNN
+F 1 "GND" H 2396 1874 50  0000 C CNN
+F 2 "" H 2396 2024 50  0001 C CNN
+F 3 "" H 2396 2024 50  0001 C CNN
+	1    2396 2024
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0115
+U 1 1 5F9142E0
+P 2396 924
+F 0 "#PWR0115" H 2396 774 50  0001 C CNN
+F 1 "+5V" H 2396 1064 50  0000 C CNN
+F 2 "" H 2396 924 50  0001 C CNN
+F 3 "" H 2396 924 50  0001 C CNN
+	1    2396 924 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5F9069FB
+P 2396 1374
+F 0 "D3" V 2435 1257 50  0000 R CNN
+F 1 "LED" V 2344 1257 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2396 1374 50  0001 C CNN
+F 3 "~" H 2396 1374 50  0001 C CNN
+	1    2396 1374
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2096 1724
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 5F901920
+P 2296 1724
+F 0 "Q2" H 2500 1770 50  0000 L CNN
+F 1 "2N7002" H 2500 1679 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2496 1649 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2296 1724 50  0001 L CNN
+	1    2296 1724
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:R-project R15
+U 1 1 5F9001D1
+P 2096 1874
+F 0 "R15" V 2176 1874 50  0000 C CNN
+F 1 "10K" V 2096 1884 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2026 1874 50  0001 C CNN
+F 3 "" H 2096 1874 50  0001 C CNN
+	1    2096 1874
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:R-project R14
+U 1 1 5F8FE516
+P 1946 1724
+F 0 "R14" V 2026 1724 50  0000 C CNN
+F 1 "10" V 1952 1734 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1876 1724 50  0001 C CNN
+F 3 "" H 1946 1724 50  0001 C CNN
+	1    1946 1724
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:R-project R3
+U 1 1 5F542219
+P 2396 1074
+F 0 "R3" V 2476 1074 50  0000 C CNN
+F 1 "470" V 2398 1082 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2326 1074 50  0001 C CNN
+F 3 "" H 2396 1074 50  0001 C CNN
+	1    2396 1074
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	932  3070 932  3170
+$Comp
+L project-rescue:GND-project #PWR038
+U 1 1 5B91AEE8
+P 932 3170
+F 0 "#PWR038" H 932 2920 50  0001 C CNN
+F 1 "GND" H 932 3020 50  0000 C CNN
+F 2 "" H 932 3170 50  0001 C CNN
+F 3 "" H 932 3170 50  0001 C CNN
+	1    932  3170
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:LED-project D1
+U 1 1 5B91ACD7
+P 932 2520
+F 0 "D1" H 932 2620 50  0000 C CNN
+F 1 "PWR" H 932 2420 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 932 2520 50  0001 C CNN
+F 3 "" H 932 2520 50  0001 C CNN
+	1    932  2520
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR039
+U 1 1 5B91AF56
+P 932 2270
+F 0 "#PWR039" H 932 2120 50  0001 C CNN
+F 1 "+5V" H 932 2410 50  0000 C CNN
+F 2 "" H 932 2270 50  0001 C CNN
+F 3 "" H 932 2270 50  0001 C CNN
+	1    932  2270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	932  2270 932  2370
+Wire Wire Line
+	932  2670 932  2770
+$Comp
+L project-rescue:R-project R1
+U 1 1 5B91AE4B
+P 932 2920
+F 0 "R1" V 1012 2920 50  0000 C CNN
+F 1 "1K" V 932 2920 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 862 2920 50  0001 C CNN
+F 3 "" H 932 2920 50  0001 C CNN
+	1    932  2920
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	676  730  5362 730 
+Wire Wire Line
+	2396 1924 2396 2024
+Connection ~ 5274 4460
+$Comp
+L Device:C C8
+U 1 1 5FA86D48
+P 8922 902
+F 0 "C8" V 8964 808 50  0000 C CNN
+F 1 "0.1uF" V 9012 1062 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8960 752 50  0001 C CNN
+F 3 "~" H 8922 902 50  0001 C CNN
+	1    8922 902 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0116
+U 1 1 5FA4208A
+P 8922 752
+F 0 "#PWR0116" H 8922 502 50  0001 C CNN
+F 1 "GND" H 8922 602 50  0000 C CNN
+F 2 "" H 8922 752 50  0001 C CNN
+F 3 "" H 8922 752 50  0001 C CNN
+	1    8922 752 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB5
+U 1 1 5FA4042A
+P 8672 900
+F 0 "FB5" V 8622 792 50  0000 C CNN
+F 1 "Ferrite" V 8554 760 50  0000 C CNN
+F 2 "footprints:FerriteBead" V 8602 900 50  0001 C CNN
+F 3 "~" H 8672 900 50  0001 C CNN
+	1    8672 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0117
+U 1 1 5F769B93
+P 8222 720
+F 0 "#PWR0117" H 8222 570 50  0001 C CNN
+F 1 "+5V" V 8162 780 50  0000 C CNN
+F 2 "" H 8222 720 50  0001 C CNN
+F 3 "" H 8222 720 50  0001 C CNN
+	1    8222 720 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB4
+U 1 1 5FA1637E
+P 8222 870
+F 0 "FB4" V 8172 762 50  0000 C CNN
+F 1 "Ferrite" V 8358 878 50  0000 C CNN
+F 2 "footprints:FerriteBead" V 8152 870 50  0001 C CNN
+F 3 "~" H 8222 870 50  0001 C CNN
+	1    8222 870 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5FA16FC2
+P 8438 862
+F 0 "C7" V 8480 768 50  0000 C CNN
+F 1 "0.1uF" V 8528 1004 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8476 712 50  0001 C CNN
+F 3 "~" H 8438 862 50  0001 C CNN
+	1    8438 862 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0118
+U 1 1 5FA16B08
+P 8438 712
+F 0 "#PWR0118" H 8438 462 50  0001 C CNN
+F 1 "GND" H 8438 562 50  0000 C CNN
+F 2 "" H 8438 712 50  0001 C CNN
+F 3 "" H 8438 712 50  0001 C CNN
+	1    8438 712 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB3
+U 1 1 5F9F307E
+P 7762 876
+F 0 "FB3" V 7712 768 50  0000 C CNN
+F 1 "Ferrite" V 7614 912 50  0000 C CNN
+F 2 "footprints:FerriteBead" V 7692 876 50  0001 C CNN
+F 3 "~" H 7762 876 50  0001 C CNN
+	1    7762 876 
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0119
+U 1 1 5F9C9AAE
+P 7876 4538
+F 0 "#PWR0119" H 7876 4288 50  0001 C CNN
+F 1 "GND" H 7876 4388 50  0000 C CNN
+F 2 "" H 7876 4538 50  0001 C CNN
+F 3 "" H 7876 4538 50  0001 C CNN
+	1    7876 4538
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5F9C89F2
+P 7726 4538
+F 0 "C6" V 7848 4490 50  0000 L CNN
+F 1 "0.1uF" V 7664 4570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7764 4388 50  0001 C CNN
+F 3 "~" H 7726 4538 50  0001 C CNN
+	1    7726 4538
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0120
+U 1 1 5F9C856E
+P 7276 4538
+F 0 "#PWR0120" H 7276 4388 50  0001 C CNN
+F 1 "+5V" H 7276 4678 50  0000 C CNN
+F 2 "" H 7276 4538 50  0001 C CNN
+F 3 "" H 7276 4538 50  0001 C CNN
+	1    7276 4538
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 5F9C7D4B
+P 7426 4538
+F 0 "FB2" V 7478 4638 50  0000 C CNN
+F 1 "Ferrite" V 7542 4530 50  0000 C CNN
+F 2 "footprints:FerriteBead" V 7356 4538 50  0001 C CNN
+F 3 "~" H 7426 4538 50  0001 C CNN
+	1    7426 4538
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0121
+U 1 1 5F7D794E
+P 10226 2244
+F 0 "#PWR0121" H 10226 2094 50  0001 C CNN
+F 1 "+5V" H 10226 2384 50  0000 C CNN
+F 2 "" H 10226 2244 50  0001 C CNN
+F 3 "" H 10226 2244 50  0001 C CNN
+	1    10226 2244
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0122
+U 1 1 5F7A3E40
+P 6256 3478
+F 0 "#PWR0122" H 6256 3228 50  0001 C CNN
+F 1 "GND" H 6256 3328 50  0000 C CNN
+F 2 "" H 6256 3478 50  0001 C CNN
+F 3 "" H 6256 3478 50  0001 C CNN
+	1    6256 3478
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0123
+U 1 1 5F76A04E
+P 8672 750
+F 0 "#PWR0123" H 8672 600 50  0001 C CNN
+F 1 "+5V" V 8672 950 50  0000 C CNN
+F 2 "" H 8672 750 50  0001 C CNN
+F 3 "" H 8672 750 50  0001 C CNN
+	1    8672 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0124
+U 1 1 5F766039
+P 7762 726
+F 0 "#PWR0124" H 7762 576 50  0001 C CNN
+F 1 "+5V" V 7762 926 50  0000 C CNN
+F 2 "" H 7762 726 50  0001 C CNN
+F 3 "" H 7762 726 50  0001 C CNN
+	1    7762 726 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0125
+U 1 1 5F74B9A6
+P 7538 710
+F 0 "#PWR0125" H 7538 460 50  0001 C CNN
+F 1 "GND" H 7538 560 50  0000 C CNN
+F 2 "" H 7538 710 50  0001 C CNN
+F 3 "" H 7538 710 50  0001 C CNN
+	1    7538 710 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F6E490A
+P 7538 860
+F 0 "C5" V 7580 766 50  0000 C CNN
+F 1 "0.1uF" V 7636 1008 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7576 710 50  0001 C CNN
+F 3 "~" H 7538 860 50  0001 C CNN
+	1    7538 860 
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:R-project R9
+U 1 1 5F6BF6E6
+P 5526 3288
+F 0 "R9" V 5576 3138 50  0000 C CNN
+F 1 "22" V 5526 3288 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5456 3288 50  0001 C CNN
+F 3 "" H 5526 3288 50  0001 C CNN
+	1    5526 3288
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6660 1388 7276 1388
+Wire Wire Line
+	6660 1230 6660 1302
+$Comp
+L project-rescue:GND-project #PWR0126
+U 1 1 5F6B830C
+P 7210 1070
+F 0 "#PWR0126" H 7210 820 50  0001 C CNN
+F 1 "GND" H 7210 920 50  0000 C CNN
+F 2 "" H 7210 1070 50  0001 C CNN
+F 3 "" H 7210 1070 50  0001 C CNN
+	1    7210 1070
+	1    0    0    -1  
+$EndComp
+Connection ~ 6786 870 
+Wire Wire Line
+	6910 1068 6910 1070
+Wire Wire Line
+	6786 1068 6910 1068
+Wire Wire Line
+	6786 870  6786 1068
+Wire Wire Line
+	6660 870  6660 930 
+Wire Wire Line
+	6786 870  6660 870 
+$Comp
+L Device:C C9
+U 1 1 5F671687
+P 7060 1070
+F 0 "C9" V 7102 970 50  0000 C CNN
+F 1 "0.1uF" V 7008 918 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7098 920 50  0001 C CNN
+F 3 "~" H 7060 1070 50  0001 C CNN
+	1    7060 1070
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0127
+U 1 1 5F5C7AB2
+P 10126 3488
+F 0 "#PWR0127" H 10126 3238 50  0001 C CNN
+F 1 "GND" H 10126 3338 50  0000 C CNN
+F 2 "" H 10126 3488 50  0001 C CNN
+F 3 "" H 10126 3488 50  0001 C CNN
+	1    10126 3488
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project-rescue:R-project R8
+U 1 1 5F5C6C99
+P 9976 3488
+F 0 "R8" V 9926 3338 50  0000 C CNN
+F 1 "10k" V 9976 3488 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9906 3488 50  0001 C CNN
+F 3 "" H 9976 3488 50  0001 C CNN
+	1    9976 3488
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:R-project R4
+U 1 1 5F5A3774
+P 6660 1080
+F 0 "R4" V 6610 930 50  0000 C CNN
+F 1 "10k" V 6656 1088 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6590 1080 50  0001 C CNN
+F 3 "" H 6660 1080 50  0001 C CNN
+	1    6660 1080
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9826 3288 9826 3286
+Wire Wire Line
+	9526 3288 9826 3288
+Wire Wire Line
+	9842 1788 9842 1776
+Wire Wire Line
+	9526 1788 9842 1788
+Text Label 9826 2988 0    60   ~ 0
+A8
+Wire Notes Line
+	596  3666 5702 3666
+Wire Notes Line
+	5702 3666 5702 7082
+Text Label 9826 3188 0    60   ~ 0
+A7
+Text Label 9526 2288 0    60   ~ 0
+ESC_PPM
+Text Label 9526 2388 0    60   ~ 0
+SERVO_PPM
+Wire Wire Line
+	6860 3786 7276 3786
+Connection ~ 6860 3786
+Wire Wire Line
+	6860 3886 6860 3786
+$Comp
+L project-rescue:GND-project #PWR0128
+U 1 1 5F550409
+P 6860 4186
+F 0 "#PWR0128" H 6860 3936 50  0001 C CNN
+F 1 "GND" H 6860 4036 50  0000 C CNN
+F 2 "" H 6860 4186 50  0001 C CNN
+F 3 "" H 6860 4186 50  0001 C CNN
+	1    6860 4186
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7276 3786 7276 3788
+Wire Wire Line
+	6750 3786 6860 3786
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5F53234B
+P 6600 3786
+F 0 "FB1" V 6326 3786 50  0000 C CNN
+F 1 "Ferrite" V 6417 3786 50  0000 C CNN
+F 2 "footprints:FerriteBead" V 6530 3786 50  0001 C CNN
+F 3 "~" H 6600 3786 50  0001 C CNN
+	1    6600 3786
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F53321A
+P 6860 4036
+F 0 "C4" H 6975 4082 50  0000 L CNN
+F 1 "0.1uF" H 6975 3991 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6898 3886 50  0001 C CNN
+F 3 "~" H 6860 4036 50  0001 C CNN
+	1    6860 4036
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR0129
+U 1 1 5F594CD9
+P 6450 3786
+F 0 "#PWR0129" H 6450 3636 50  0001 C CNN
+F 1 "+5V" H 6450 3926 50  0000 C CNN
+F 2 "" H 6450 3786 50  0001 C CNN
+F 3 "" H 6450 3786 50  0001 C CNN
+	1    6450 3786
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9830 1388 9830 1386
+Wire Wire Line
+	9526 1388 9830 1388
+Wire Wire Line
+	9826 3588 9826 3592
+Wire Wire Line
+	9526 3588 9826 3588
+Text Label 9826 3592 2    50   ~ 0
+PE6
+Text Label 9830 1386 0    50   ~ 0
+PB0
+Wire Wire Line
+	6876 1738 7076 1738
+Wire Wire Line
+	6876 2038 7076 2038
+$Comp
+L project-rescue:+5V-project #PWR0130
+U 1 1 5F596CDE
+P 6786 870
+F 0 "#PWR0130" H 6786 720 50  0001 C CNN
+F 1 "+5V" H 6786 1010 50  0000 C CNN
+F 2 "" H 6786 870 50  0001 C CNN
+F 3 "" H 6786 870 50  0001 C CNN
+	1    6786 870 
+	1    0    0    -1  
+$EndComp
+Text Label 9842 1776 0    60   ~ 0
+A5
+Text Label 9826 1888 0    60   ~ 0
+A4
+Text Label 9826 1988 0    60   ~ 0
+A3
+Text Label 9826 3888 0    60   ~ 0
+A2
+Text Label 9826 3788 0    60   ~ 0
+A1
+Wire Wire Line
+	9526 4188 9826 4188
+Wire Wire Line
+	9526 4088 9826 4088
+Wire Wire Line
+	9526 3988 9826 3988
+Wire Wire Line
+	9526 3888 9826 3888
+Wire Wire Line
+	9526 3788 9826 3788
+Text Label 9826 2688 0    60   ~ 0
+CHB
+Text Label 9826 2588 0    60   ~ 0
+CHA
+Text Label 9826 2088 0    60   ~ 0
+PWM_LINE
+Wire Wire Line
+	9526 1488 9826 1488
+Wire Wire Line
+	9526 1588 9826 1588
+Wire Wire Line
+	9526 1688 9826 1688
+Wire Wire Line
+	9526 1888 9826 1888
+Wire Wire Line
+	9526 1988 9826 1988
+Wire Wire Line
+	9526 2088 9826 2088
+Wire Wire Line
+	9526 2988 9826 2988
+Wire Wire Line
+	9526 3188 9826 3188
+Wire Wire Line
+	9526 3488 9826 3488
+Wire Wire Line
+	7276 2038 7276 1988
+Wire Wire Line
+	7076 1738 7276 1738
+Wire Wire Line
+	7076 2038 7276 2038
+Wire Wire Line
+	7126 2988 7276 2988
+Connection ~ 7076 1738
+Wire Wire Line
+	7276 1738 7276 1788
+Connection ~ 7076 2038
+$Comp
+L project-rescue:R-project R5
+U 1 1 5B93795F
+P 7076 1888
+F 0 "R5" H 6982 1884 50  0000 C CNN
+F 1 "1M" V 7076 1888 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7006 1888 50  0001 C CNN
+F 3 "" H 7076 1888 50  0001 C CNN
+	1    7076 1888
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7126 2538 6926 2538
+Wire Wire Line
+	5926 2538 6626 2538
+Wire Wire Line
+	7276 2838 6976 2838
+Wire Wire Line
+	7276 2738 6976 2738
+Wire Wire Line
+	7126 2588 7126 2538
+Wire Wire Line
+	7126 2588 7276 2588
+Connection ~ 7126 2988
+Wire Wire Line
+	7126 2988 7126 3088
+Wire Wire Line
+	7076 2988 7126 2988
+$Comp
+L project-rescue:+5V-project #PWR030
+U 1 1 5B904D8B
+P 7076 2988
+F 0 "#PWR030" H 7076 2838 50  0001 C CNN
+F 1 "+5V" V 7076 3188 50  0000 C CNN
+F 2 "" H 7076 2988 50  0001 C CNN
+F 3 "" H 7076 2988 50  0001 C CNN
+	1    7076 2988
+	0    -1   -1   0   
+$EndComp
+$Comp
+L project-rescue:Polyfuse-project F1
+U 1 1 5B6E44FA
+P 6776 2538
+F 0 "F1" V 6676 2438 50  0000 C CNN
+F 1 "Polyfuse" V 6826 2688 50  0000 C CNN
+F 2 "footprints:FerriteBead" H 6826 2338 50  0001 L CNN
+F 3 "" H 6776 2538 50  0001 C CNN
+	1    6776 2538
+	0    1    1    0   
+$EndComp
+Text Label 7126 2838 0    60   ~ 0
+D-
+Text Label 7126 2738 0    60   ~ 0
+D+
+NoConn ~ 5926 2938
+$Comp
+L project-rescue:GND-project #PWR09
+U 1 1 5B3FE6F5
+P 5526 3438
+F 0 "#PWR09" H 5526 3188 50  0001 C CNN
+F 1 "GND" H 5526 3288 50  0000 C CNN
+F 2 "" H 5526 3438 50  0001 C CNN
+F 3 "" H 5526 3438 50  0001 C CNN
+	1    5526 3438
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:R-project R7
+U 1 1 5B3FE482
+P 6826 2838
+F 0 "R7" V 6876 2688 50  0000 C CNN
+F 1 "22" V 6826 2838 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6756 2838 50  0001 C CNN
+F 3 "" H 6826 2838 50  0001 C CNN
+	1    6826 2838
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:R-project R6
+U 1 1 5B3FE405
+P 6826 2738
+F 0 "R6" V 6776 2588 50  0000 C CNN
+F 1 "22" V 6826 2738 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6756 2738 50  0001 C CNN
+F 3 "" H 6826 2738 50  0001 C CNN
+	1    6826 2738
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:VBUS-project #PWR08
+U 1 1 5B3FE2CD
+P 7126 2538
+F 0 "#PWR08" H 7126 2388 50  0001 C CNN
+F 1 "VBUS" H 7126 2688 50  0000 C CNN
+F 2 "" H 7126 2538 50  0001 C CNN
+F 3 "" H 7126 2538 50  0001 C CNN
+	1    7126 2538
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR07
+U 1 1 5B3FE24E
+P 6394 1880
+F 0 "#PWR07" H 6394 1630 50  0001 C CNN
+F 1 "GND" H 6394 1730 50  0000 C CNN
+F 2 "" H 6394 1880 50  0001 C CNN
+F 3 "" H 6394 1880 50  0001 C CNN
+	1    6394 1880
+	0    1    1    0   
+$EndComp
+Text Label 7026 1388 0    60   ~ 0
+~RESET
+$Comp
+L project-rescue:GND-project #PWR06
+U 1 1 5B3FDF98
+P 7126 3388
+F 0 "#PWR06" H 7126 3138 50  0001 C CNN
+F 1 "GND" H 7126 3238 50  0000 C CNN
+F 2 "" H 7126 3388 50  0001 C CNN
+F 3 "" H 7126 3388 50  0001 C CNN
+	1    7126 3388
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:C-project C3
+U 1 1 5B3FDF75
+P 7126 3238
+F 0 "C3" H 7151 3338 50  0000 L CNN
+F 1 "10uF" H 7151 3138 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7164 3088 50  0001 C CNN
+F 3 "" H 7126 3238 50  0001 C CNN
+	1    7126 3238
+	1    0    0    -1  
+$EndComp
+Text Label 9826 3286 0    60   ~ 0
+A6
+Text Label 9826 1688 0    60   ~ 0
+MISO
+Text Label 9826 1588 0    60   ~ 0
+MOSI
+Text Label 9826 1488 0    60   ~ 0
+SCK
+Wire Wire Line
+	9526 4288 9826 4288
+Connection ~ 8326 4538
+$Comp
+L project-rescue:GND-project #PWR05
+U 1 1 5B3FDE3A
+P 8326 4538
+F 0 "#PWR05" H 8326 4288 50  0001 C CNN
+F 1 "GND" H 8326 4388 50  0000 C CNN
+F 2 "" H 8326 4538 50  0001 C CNN
+F 3 "" H 8326 4538 50  0001 C CNN
+	1    8326 4538
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:+5V-project #PWR018
+U 1 1 5B8EBD32
+P 5274 4460
+F 0 "#PWR018" H 5274 4310 50  0001 C CNN
+F 1 "+5V" H 5274 4600 50  0000 C CNN
+F 2 "" H 5274 4460 50  0001 C CNN
+F 3 "" H 5274 4460 50  0001 C CNN
+	1    5274 4460
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:USB_OTG-project X1
+U 1 1 5B3FE368
+P 5626 2738
+F 0 "X1" H 5426 3188 50  0000 L CNN
+F 1 "USB_OTG" H 5426 3088 50  0000 L CNN
+F 2 "footprints:USB_Micro-B_Molex-105017-0001" H 5776 2688 50  0001 C CNN
+F 3 "" H 5776 2688 50  0001 C CNN
+	1    5626 2738
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6050 5050 10302 5050
+Text Label 4780 1522 3    60   ~ 0
+PWM_LINE
+$Comp
+L project-rescue:GND-project #PWR0131
+U 1 1 5F51CE99
+P 4630 1522
+F 0 "#PWR0131" H 4630 1272 50  0001 C CNN
+F 1 "GND" H 4630 1372 50  0000 C CNN
+F 2 "" H 4630 1522 50  0001 C CNN
+F 3 "" H 4630 1522 50  0001 C CNN
+	1    4630 1522
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:LINE_BLOCK-project U4
+U 1 1 5F525F06
+P 3980 1272
+F 0 "U4" H 3974 1490 60  0000 C CNN
+F 1 "LINE_BLOCK" H 3980 1653 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Horizontal" H 3980 1322 60  0001 C CNN
+F 3 "" H 3980 1322 60  0001 C CNN
+	1    3980 1272
+	1    0    0    -1  
+$EndComp
+Text Label 1332 3282 3    59   ~ 0
+TCK
+Text Label 1482 3282 3    59   ~ 0
+TDO
+Text Label 1632 3282 3    59   ~ 0
+TMS
+Text Label 1932 3282 3    59   ~ 0
+TDI
+$Comp
+L project-rescue:GND-project #PWR0102
+U 1 1 5F6EB31E
+P 4596 2578
+F 0 "#PWR0102" H 4596 2328 50  0001 C CNN
+F 1 "GND" H 4596 2428 50  0000 C CNN
+F 2 "" H 4596 2578 50  0001 C CNN
+F 3 "" H 4596 2578 50  0001 C CNN
+	1    4596 2578
+	1    0    0    -1  
+$EndComp
+Text Label 1632 2582 1    60   ~ 0
+~RESET
+$Comp
+L project-rescue:+5V-project #PWR0132
+U 1 1 5F59A3D8
+P 1482 2582
+F 0 "#PWR0132" H 1482 2432 50  0001 C CNN
+F 1 "+5V" H 1462 2718 50  0000 C CNN
+F 2 "" H 1482 2582 50  0001 C CNN
+F 3 "" H 1482 2582 50  0001 C CNN
+	1    1482 2582
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0133
+U 1 1 5F5998CE
+P 1932 2582
+F 0 "#PWR0133" H 1932 2332 50  0001 C CNN
+F 1 "GND" H 1932 2432 50  0000 C CNN
+F 2 "" H 1932 2582 50  0001 C CNN
+F 3 "" H 1932 2582 50  0001 C CNN
+	1    1932 2582
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0134
+U 1 1 5F598BC8
+P 1332 2582
+F 0 "#PWR0134" H 1332 2332 50  0001 C CNN
+F 1 "GND" H 1332 2432 50  0000 C CNN
+F 2 "" H 1332 2582 50  0001 C CNN
+F 3 "" H 1332 2582 50  0001 C CNN
+	1    1332 2582
+	-1   0    0    1   
+$EndComp
+$Comp
+L project-rescue:JTAG-project U9
+U 1 1 5F57442D
+P 1682 2982
+F 0 "U9" H 2160 3085 59  0000 L CNN
+F 1 "JTAG" H 2160 2980 59  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 1832 2982 157 0001 C CNN
+F 3 "" H 1832 2982 157 0001 C CNN
+	1    1682 2982
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1782 2582
+NoConn ~ 1782 3282
+Text Label 9826 3988 0    59   ~ 0
+TCK
+Text Label 9826 4188 0    59   ~ 0
+TDO
+Text Label 9826 4088 0    59   ~ 0
+TMS
+Text Label 9826 4288 0    59   ~ 0
+TDI
+Wire Notes Line
+	6050 6642 10302 6642
+Wire Notes Line
+	10302 5050 10302 6642
+Wire Notes Line
+	6050 5050 6050 6642
+$Comp
+L project-rescue:+5V-project #PWR0135
+U 1 1 5F55C113
+P 6064 2164
+F 0 "#PWR0135" H 6064 2014 50  0001 C CNN
+F 1 "+5V" H 6064 2304 50  0000 C CNN
+F 2 "" H 6064 2164 50  0001 C CNN
+F 3 "" H 6064 2164 50  0001 C CNN
+	1    6064 2164
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5F55C939
+P 6838 2294
+F 0 "C10" V 6880 2194 50  0000 C CNN
+F 1 "0.1uF" V 6786 2142 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6876 2144 50  0001 C CNN
+F 3 "~" H 6838 2294 50  0001 C CNN
+	1    6838 2294
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB6
+U 1 1 5F55CD88
+P 6214 2164
+F 0 "FB6" V 6164 2056 50  0000 C CNN
+F 1 "Ferrite" V 6066 2200 50  0000 C CNN
+F 2 "footprints:FerriteBead" V 6144 2164 50  0001 C CNN
+F 3 "~" H 6214 2164 50  0001 C CNN
+	1    6214 2164
+	0    1    1    0   
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0136
+U 1 1 5F55D38D
+P 6988 2294
+F 0 "#PWR0136" H 6988 2044 50  0001 C CNN
+F 1 "GND" H 6988 2144 50  0000 C CNN
+F 2 "" H 6988 2294 50  0001 C CNN
+F 3 "" H 6988 2294 50  0001 C CNN
+	1    6988 2294
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7276 2138 6688 2138
+Wire Wire Line
+	6364 2138 6364 2164
+Wire Wire Line
+	6688 2294 6688 2138
+Connection ~ 6688 2138
+Wire Wire Line
+	6688 2138 6364 2138
+Connection ~ 7126 2538
+Wire Wire Line
+	3638 4910 4262 4910
+Wire Wire Line
+	4262 4910 4262 4984
+Wire Wire Line
+	4262 4984 4264 4984
+Connection ~ 4262 4910
+Wire Wire Line
+	4262 4910 4830 4910
+Wire Wire Line
+	7762 1026 7538 1026
+Wire Wire Line
+	7538 1026 7538 1010
+Connection ~ 8276 4538
+Wire Wire Line
+	8276 4538 8326 4538
+Wire Wire Line
+	8026 4538 8276 4538
+Connection ~ 8376 4538
+Wire Wire Line
+	8326 4538 8376 4538
+Connection ~ 8476 4538
+Wire Wire Line
+	8376 4538 8476 4538
+Wire Wire Line
+	8476 4538 8576 4538
+$Comp
+L project-rescue:ATMEGA32U4-AU-project U1
+U 1 1 5B3FD92A
+P 8426 2938
+F 0 "U1" H 7476 4638 50  0000 C CNN
+F 1 "ATMEGA32U4-AU" H 9126 1438 50  0000 C CNN
+F 2 "footprints:TQFP-44_10x10mm_Pitch0.8mm" H 8426 2938 50  0001 C CIN
+F 3 "" H 9526 4038 50  0001 C CNN
+	1    8426 2938
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7762 1026 7762 1138
+Wire Wire Line
+	7762 1138 7776 1138
+Connection ~ 7762 1026
+Wire Wire Line
+	8222 1020 8438 1020
+Wire Wire Line
+	8438 1020 8438 1012
+Wire Wire Line
+	8222 1020 8222 1138
+Wire Wire Line
+	8222 1138 8226 1138
+Connection ~ 8222 1020
+Wire Wire Line
+	8672 1076 8922 1076
+Wire Wire Line
+	8922 1076 8922 1052
+Wire Wire Line
+	8672 1138 8676 1138
+Wire Wire Line
+	8672 1050 8672 1076
+Connection ~ 8672 1076
+Wire Wire Line
+	8672 1076 8672 1138
+Wire Wire Line
+	9526 2688 9732 2688
+Wire Wire Line
+	9526 2588 9642 2588
+$Comp
+L project-rescue:R-project R10
+U 1 1 5F7D5C9D
+P 10226 2394
+F 0 "R10" V 10302 2374 50  0000 C CNN
+F 1 "10k" V 10222 2402 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10156 2394 50  0001 C CNN
+F 3 "" H 10226 2394 50  0001 C CNN
+	1    10226 2394
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10226 2544 10120 2544
+Wire Wire Line
+	10120 2544 10120 2486
+Wire Wire Line
+	10120 2486 9642 2486
+Wire Wire Line
+	9642 2486 9642 2588
+Connection ~ 9642 2588
+Wire Wire Line
+	9642 2588 9826 2588
+Wire Wire Line
+	10408 2540 10408 2604
+Wire Wire Line
+	10408 2604 9732 2604
+Wire Wire Line
+	9732 2604 9732 2688
+Connection ~ 9732 2688
+Wire Wire Line
+	9732 2688 9826 2688
+Wire Wire Line
+	1196 4694 1442 4694
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5F5A3428
+P 948 4618
+F 0 "J1" H 840 4293 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 840 4384 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 948 4618 50  0001 C CNN
+F 3 "~" H 948 4618 50  0001 C CNN
+	1    948  4618
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1196 4618 1148 4618
+Wire Wire Line
+	1196 4618 1196 4694
+$Comp
+L project-rescue:UART_BLOCK-project U10
+U 1 1 5F599A54
+P 3208 2512
+F 0 "U10" H 3536 2603 59  0000 L CNN
+F 1 "UART_BLOCK" H 3536 2498 59  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3208 2512 59  0001 C CNN
+F 3 "" H 3208 2512 59  0001 C CNN
+	1    3208 2512
+	1    0    0    -1  
+$EndComp
+Text Label 3358 2712 3    59   ~ 0
+D0
+Text Label 3158 2712 3    59   ~ 0
+TX
+Text Label 9834 2886 0    59   ~ 0
+TX
+Text Label 2958 2712 3    59   ~ 0
+RX
+Text Label 9836 2790 0    59   ~ 0
+RX
+Text Label 9832 3084 0    59   ~ 0
+D0
+Wire Wire Line
+	9526 2788 9836 2788
+Wire Wire Line
+	9836 2788 9836 2790
+Wire Wire Line
+	9526 2888 9834 2888
+Wire Wire Line
+	9834 2888 9834 2886
+Wire Wire Line
+	9526 3088 9832 3088
+Wire Wire Line
+	9832 3088 9832 3084
+$Comp
+L Device:Crystal Y1
+U 1 1 5F5C1799
+P 6876 1888
+F 0 "Y1" V 6866 1952 50  0000 R CNN
+F 1 "Crystal" V 7078 2002 50  0000 R CNN
+F 2 "footprints:2-SMD-5X3" H 6876 1888 50  0001 C CNN
+F 3 "~" H 6876 1888 50  0001 C CNN
+	1    6876 1888
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5F5CC15C
+P 6726 1738
+F 0 "C11" V 6768 1638 50  0000 C CNN
+F 1 "22pF" V 6674 1586 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6764 1588 50  0001 C CNN
+F 3 "~" H 6726 1738 50  0001 C CNN
+	1    6726 1738
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5F5CC646
+P 6726 2038
+F 0 "C12" V 6768 1938 50  0000 C CNN
+F 1 "22pF" V 6682 1896 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6764 1888 50  0001 C CNN
+F 3 "~" H 6726 2038 50  0001 C CNN
+	1    6726 2038
+	0    1    1    0   
+$EndComp
+Connection ~ 6876 1738
+Connection ~ 6876 2038
+Wire Wire Line
+	6576 1738 6394 1738
+Wire Wire Line
+	6394 1738 6394 1880
+Wire Wire Line
+	6394 2038 6576 2038
+Connection ~ 6394 1880
+Wire Wire Line
+	6394 1880 6394 2038
+Wire Wire Line
+	1442 4654 1442 4694
+Wire Wire Line
+	1442 4654 2922 4654
+$Comp
+L project-rescue:SMF05C.TCT-project D5
+U 1 1 5F6A6EFE
+P 6156 3258
+F 0 "D5" H 6384 3408 50  0000 R CNN
+F 1 "SMF05C.TCT" H 6460 3100 50  0000 R CNN
+F 2 "footprints:SC70-6" H 6156 3258 50  0001 L BNN
+F 3 "" H 6156 3258 59  0001 C CNN
+	1    6156 3258
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6126 3122 6256 3122
+Wire Wire Line
+	6256 3122 6256 3158
+Wire Wire Line
+	6376 3036 6656 3036
+Wire Wire Line
+	6656 3036 6656 3158
+NoConn ~ 5856 3158
+NoConn ~ 6056 3158
+NoConn ~ 6456 3158
+Wire Wire Line
+	6256 3458 6256 3466
+Wire Wire Line
+	5626 3138 5626 3466
+Wire Wire Line
+	5626 3466 6256 3466
+Connection ~ 6256 3466
+Wire Wire Line
+	6256 3466 6256 3478
+$Comp
+L pspice:DIODE D4
+U 1 1 5F73410F
+P 2394 4458
+F 0 "D4" H 2394 4723 50  0000 C CNN
+F 1 "SS34" H 2394 4632 50  0000 C CNN
+F 2 "footprints:SS34_SMC" H 2394 4458 50  0001 C CNN
+F 3 "~" H 2394 4458 50  0001 C CNN
+	1    2394 4458
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1196 4518 1148 4518
+Wire Wire Line
+	1196 4294 1196 4518
+Wire Wire Line
+	1842 4394 2194 4394
+Wire Wire Line
+	2194 4394 2194 4458
+Wire Wire Line
+	1442 4294 1442 4394
+Wire Wire Line
+	1196 4294 1442 4294
+$Comp
+L project-rescue:SW_Push-project SW2
+U 1 1 5F692E57
+P 1642 4394
+F 0 "SW2" H 1642 4679 50  0000 C CNN
+F 1 "SW_Push" H 1642 4588 50  0000 C CNN
+F 2 "footprints:SwitchPush" H 1642 4594 50  0001 C CNN
+F 3 "" H 1642 4594 50  0001 C CNN
+	1    1642 4394
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR011
+U 1 1 5B40099C
+P 6010 1440
+F 0 "#PWR011" H 6010 1190 50  0001 C CNN
+F 1 "GND" H 6010 1290 50  0000 C CNN
+F 2 "" H 6010 1440 50  0001 C CNN
+F 3 "" H 6010 1440 50  0001 C CNN
+	1    6010 1440
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6060 1190 6010 1190
+Wire Wire Line
+	5926 2838 6126 2838
+Wire Wire Line
+	6376 3036 6376 2738
+Connection ~ 6376 2738
+Wire Wire Line
+	6376 2738 6676 2738
+Wire Wire Line
+	5926 2738 6376 2738
+Wire Wire Line
+	6126 3122 6126 2838
+Connection ~ 6126 2838
+Wire Wire Line
+	6126 2838 6676 2838
+$Comp
+L project-rescue:GND-project #PWR0137
+U 1 1 5F5DD1F4
+P 4412 4710
+F 0 "#PWR0137" H 4412 4460 50  0001 C CNN
+F 1 "GND" H 4412 4560 50  0000 C CNN
+F 2 "" H 4412 4710 50  0001 C CNN
+F 3 "" H 4412 4710 50  0001 C CNN
+	1    4412 4710
+	1    0    0    -1  
+$EndComp
+$Comp
+L project-rescue:GND-project #PWR0138
+U 1 1 5F5DD6C1
+P 2616 6346
+F 0 "#PWR0138" H 2616 6096 50  0001 C CNN
+F 1 "GND" H 2616 6196 50  0000 C CNN
+F 2 "" H 2616 6346 50  0001 C CNN
+F 3 "" H 2616 6346 50  0001 C CNN
+	1    2616 6346
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6010 1190 6010 1440
+NoConn ~ 6060 1390
+$Comp
+L project-rescue:ButtonFirst-project SW1
+U 1 1 5F8402C1
+P 6310 1290
+F 0 "SW1" H 6310 1605 50  0000 C CNN
+F 1 "ButtonFirst" H 6310 1514 50  0000 C CNN
+F 2 "footprints:ButtonFirst" H 6310 1290 50  0001 L BNN
+F 3 "4-1437565-9" H 6310 1290 50  0001 L BNN
+F 4 "50 mA" H 6310 1290 50  0001 L BNN "Field4"
+F 5 "Single Pole - Single Throw" H 6310 1290 50  0001 L BNN "Field5"
+F 6 "Compliant" H 6310 1290 50  0001 L BNN "Field6"
+	1    6310 1290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6560 1190 6560 1302
+Wire Wire Line
+	6560 1302 6660 1302
+Connection ~ 6660 1302
+Wire Wire Line
+	6660 1302 6660 1388
+NoConn ~ 6560 1390
+$EndSCHEMATC
